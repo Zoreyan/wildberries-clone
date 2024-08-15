@@ -126,6 +126,7 @@ SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'APP': {
             
+            'client_id': '#',
         },
         "SCOPE": [
             'profile',
