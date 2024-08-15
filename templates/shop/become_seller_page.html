@@ -1,0 +1,18 @@
+{% extends 'shop/base.html' %}
+{% load static %}
+
+{% block content %}
+   <div class="row justify-content-center">
+    <div class="col-4">
+        <div class="card px-sm-6 px-0">
+            <form class="card-body" method="post">
+                {% csrf_token %}
+                <h4 class="mb-1">Становление продавцом</h4>
+                <p class="mb-6">Вы дейстивительно хотите стать продавцом?</p>
+                
+                <button type="submit" class="btn btn-primary">Подтвердить</button>
+            </form>
+        </div>
+    </div>
+   </div>
+{% endblock %}

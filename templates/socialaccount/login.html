@@ -1,0 +1,22 @@
+{% extends 'account/base.html' %}
+{% load static %}
+{% load allauth account %}
+{% block content %}
+      <div class="card px-sm-6 px-0">
+        <div class="card-body">
+
+          <h4 class="mb-1">Вход через Google!</h4>
+          <p class="mb-6">Вы собираетесь войти через сторонний аккаунт</p>
+
+          <form id="formAuthentication" method="post" class="mb-6 fv-plugins-bootstrap5 fv-plugins-framework">
+           {% csrf_token %}
+            <div class="mb-6 d-flex align-items-center justify-content-center">
+              <button type="submit" class="btn rounded-pill btn-google-plus">
+                <i class="tf-icons bx bxl-google-plus bx-18px me-2"></i>Google+
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+{% endblock %}
